@@ -45,7 +45,7 @@ const TAG_LABELS: Record<string, string> = {
   aqeedah: "Islamic belief",
   fiqh: "Fiqh",
   seerah: "Seerah",
-  "quran-tajweed": "Quran & Tajweed",
+  "quran-tafseer": "Qur'an & Tafseer",
   arabic: "Arabic",
   "family-marriage": "family life",
   spirituality: "spirituality",
