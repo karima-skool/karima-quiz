@@ -155,7 +155,7 @@ export default function QuizScreen({ onComplete }: Props) {
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
-        backgroundColor: "#1A1A1A",
+        backgroundColor: "#ffffff",
       }}
     >
       {/* Progress bar */}
@@ -168,7 +168,7 @@ export default function QuizScreen({ onComplete }: Props) {
           display: "flex",
           flexDirection: "column",
           padding: "32px 24px 40px",
-          maxWidth: 560,
+          maxWidth: 600,
           margin: "0 auto",
           width: "100%",
           opacity: visible ? 1 : 0,
@@ -182,14 +182,16 @@ export default function QuizScreen({ onComplete }: Props) {
             style={{
               background: "none",
               border: "none",
-              color: "#A0A0A0",
+              color: "rgb(129, 79, 255)",
               fontSize: 14,
+              fontWeight: 500,
               cursor: "pointer",
               padding: "0 0 24px 0",
               textAlign: "left",
               display: "flex",
               alignItems: "center",
               gap: 6,
+              fontFamily: "inherit",
             }}
           >
             ← Back
@@ -316,16 +318,20 @@ export default function QuizScreen({ onComplete }: Props) {
             onClick={handleNext}
             disabled={!canAdvance()}
             style={{
-              backgroundColor: canAdvance() ? "#4ECBA0" : "#2a2a2a",
-              color: canAdvance() ? "#1A1A1A" : "#555",
-              border: canAdvance() ? "none" : "1px solid #333",
-              borderRadius: 8,
-              padding: "14px 32px",
+              background: canAdvance()
+                ? "linear-gradient(155deg, rgb(214, 228, 255) -25%, rgb(129, 79, 255) 22%, rgb(63, 15, 201) 76%, rgb(212, 228, 255) 128%)"
+                : "#e8e0ff",
+              color: canAdvance() ? "#ffffff" : "#a090cc",
+              border: "none",
+              borderRadius: 24,
+              padding: "14px 28px",
               fontSize: 15,
-              fontWeight: 700,
+              fontWeight: 600,
               cursor: canAdvance() ? "pointer" : "not-allowed",
               width: "100%",
-              transition: "all 0.15s",
+              transition: "opacity 0.15s",
+              fontFamily: "inherit",
+              opacity: canAdvance() ? 1 : 0.6,
             }}
           >
             {isLast ? "See my recommendations →" : "Continue →"}

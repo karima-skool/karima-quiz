@@ -18,7 +18,6 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
   const { results, topCourse } = getRecommendations(answers);
   const summary = buildProfileSummary(answers);
 
-  // Save to Supabase once on mount
   useEffect(() => {
     if (saved) return;
     setSaved(true);
@@ -61,95 +60,71 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "#1A1A1A",
-        padding: "40px 24px 60px",
-        overflowY: "auto",
-      }}
-    >
-      <div style={{ maxWidth: 600, margin: "0 auto" }}>
-        {/* Logo */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-            marginBottom: 40,
-          }}
-        >
-          <span style={{ fontSize: 18 }}>☪</span>
-          <span
-            style={{
-              color: "#4ECBA0",
-              fontSize: 13,
-              fontWeight: 600,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-            }}
-          >
-            Karima Academy
-          </span>
-        </div>
+    <div style={{ minHeight: "100vh", backgroundColor: "#ffffff" }}>
+      {/* Nav */}
+      <div style={{
+        background: "#ffffff",
+        borderBottom: "1px solid #f0ebff",
+        padding: "16px 20px",
+        display: "flex",
+        alignItems: "center",
+      }}>
+        <span style={{
+          color: "rgb(129, 79, 255)",
+          fontSize: 12,
+          fontWeight: 600,
+          letterSpacing: "0.1em",
+          textTransform: "uppercase",
+        }}>
+          Karima Academy
+        </span>
+      </div>
 
+      {/* Content */}
+      <div style={{ maxWidth: 640, margin: "0 auto", padding: "40px 24px 60px" }}>
         {/* Heading */}
-        <h1
-          style={{
-            fontSize: "clamp(24px, 5vw, 32px)",
-            fontWeight: 700,
-            color: "#FFFFFF",
-            marginBottom: 8,
-            lineHeight: 1.2,
-          }}
-        >
+        <h1 style={{
+          fontSize: "clamp(24px, 5vw, 28px)",
+          fontWeight: 700,
+          color: "#040313",
+          marginBottom: 8,
+          lineHeight: 1.2,
+        }}>
           Your Learning Path
         </h1>
-        <p style={{ fontSize: 15, color: "#A0A0A0", marginBottom: 40 }}>
+        <p style={{ fontSize: 15, color: "#5e5e5e", marginBottom: 32 }}>
           Based on your answers, here&apos;s where we&apos;d suggest you begin.
         </p>
 
-        {/* Section 1 — Profile summary */}
-        <div
-          style={{
-            backgroundColor: "#222222",
-            border: "1px solid #2E2E2E",
-            borderRadius: 12,
-            padding: "20px 24px",
-            marginBottom: 36,
-          }}
-        >
-          <p
-            style={{
-              fontSize: 12,
-              fontWeight: 600,
-              color: "#4ECBA0",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: 12,
-            }}
-          >
+        {/* Section 1 — Profile */}
+        <div style={{
+          backgroundColor: "rgba(129, 79, 255, 0.06)",
+          border: "1px solid rgba(129, 79, 255, 0.2)",
+          borderRadius: 16,
+          padding: "20px 24px",
+          marginBottom: 40,
+        }}>
+          <p style={{
+            fontSize: 11,
+            fontWeight: 600,
+            color: "rgb(129, 79, 255)",
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            marginBottom: 12,
+          }}>
             Your profile
           </p>
-          <p style={{ fontSize: 15, color: "#CCCCCC", lineHeight: 1.7 }}>
+          <p style={{ fontSize: 15, color: "#000000", lineHeight: 1.7 }}>
             {summary}
           </p>
         </div>
 
-        {/* Section 2 — Recommended courses */}
+        {/* Section 2 — Courses */}
         <div style={{ marginBottom: 40 }}>
-          <h2
-            style={{
-              fontSize: 18,
-              fontWeight: 700,
-              color: "#FFFFFF",
-              marginBottom: 20,
-            }}
-          >
+          <h2 style={{ fontSize: 18, fontWeight: 700, color: "#040313", marginBottom: 20 }}>
             Recommended courses
           </h2>
-
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {results.map((scored, i) => (
               <CourseCard key={scored.course.id} scored={scored} rank={i + 1} />
             ))}
@@ -157,24 +132,20 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
         </div>
 
         {/* Section 3 — Fallback nudge */}
-        <div
-          style={{
-            backgroundColor: "#1e1e1e",
-            border: "1px solid #2E2E2E",
-            borderLeft: "3px solid #4ECBA0",
-            borderRadius: 10,
-            padding: "18px 20px",
-            marginBottom: 40,
-          }}
-        >
-          <p style={{ fontSize: 14, color: "#A0A0A0", lineHeight: 1.6 }}>
-            Not sure where to start? Based on your answers, we&apos;d suggest
-            beginning here —{" "}
-            <strong style={{ color: "#FFFFFF" }}>{topCourse.title}</strong>.{" "}
-            <span style={{ color: "#A0A0A0" }}>
+        <div style={{
+          backgroundColor: "rgba(129, 79, 255, 0.04)",
+          borderLeft: "3px solid rgb(129, 79, 255)",
+          borderRadius: 12,
+          padding: "18px 20px",
+          marginBottom: 40,
+        }}>
+          <p style={{ fontSize: 14, color: "#000000", lineHeight: 1.6 }}>
+            Not sure where to start? Based on your answers, we&apos;d suggest beginning here —{" "}
+            <strong style={{ color: "rgb(129, 79, 255)" }}>{topCourse.title}</strong>.{" "}
+            <span style={{ color: "#5e5e5e" }}>
               {topCourse.topic_tags.length > 0
-                ? `This course covers the areas that matter most to you right now.`
-                : `This is a great starting point for any learning journey.`}
+                ? "This course covers the areas that matter most to you right now."
+                : "This is a great starting point for any learning journey."}
             </span>
           </p>
         </div>
@@ -185,9 +156,9 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
             onClick={onRestart}
             style={{
               background: "none",
-              border: "1px solid #333",
-              borderRadius: 8,
-              color: "#A0A0A0",
+              border: "1px solid #e0e0e0",
+              borderRadius: 20,
+              color: "#5e5e5e",
               fontSize: 14,
               padding: "10px 24px",
               cursor: "pointer",

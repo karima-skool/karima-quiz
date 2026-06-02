@@ -4,17 +4,14 @@
 
 html,
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #1A1A1A;
-  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 }
-
-/* Allow natural scroll on all breakpoints — results screen exceeds viewport height.
-   The Framer iframe should be configured to scroll based on content height. */
 
 * {
   box-sizing: border-box;

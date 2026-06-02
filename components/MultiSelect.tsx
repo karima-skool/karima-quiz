@@ -10,7 +10,6 @@ interface Props {
   showOtherInput?: boolean;
   otherValue?: string;
   onOtherChange?: (val: string) => void;
-  // For Q3 where internal values differ from display labels
   selectedAsLabels?: string[];
 }
 
@@ -26,13 +25,12 @@ export default function MultiSelect({
   onOtherChange,
   selectedAsLabels,
 }: Props) {
-  // selectedDisplay is what we compare option labels against
   const selectedDisplay = selectedAsLabels ?? selected;
   const atMax = maxSelect !== undefined && selectedDisplay.length >= maxSelect;
 
   function toggle(opt: string) {
     const isSelected = selectedDisplay.includes(opt);
-    if (!isSelected && atMax) return; // at max, ignore
+    if (!isSelected && atMax) return;
     const next = isSelected
       ? selectedDisplay.filter((s) => s !== opt)
       : [...selectedDisplay, opt];
@@ -43,27 +41,18 @@ export default function MultiSelect({
 
   return (
     <div>
-      <h2
-        style={{
-          fontSize: "clamp(18px, 4vw, 22px)",
-          fontWeight: 700,
-          color: "#FFFFFF",
-          marginBottom: 28,
-          lineHeight: 1.3,
-        }}
-      >
+      <h2 style={{
+        fontSize: "clamp(18px, 4vw, 22px)",
+        fontWeight: 700,
+        color: "#040313",
+        marginBottom: 24,
+        lineHeight: 1.3,
+      }}>
         {question}
       </h2>
 
       {atMax && maxNote && (
-        <p
-          style={{
-            fontSize: 13,
-            color: "#4ECBA0",
-            marginBottom: 12,
-            marginTop: -12,
-          }}
-        >
+        <p style={{ fontSize: 13, color: "rgb(129, 79, 255)", marginBottom: 12, marginTop: -8 }}>
           {maxNote}
         </p>
       )}
@@ -79,52 +68,45 @@ export default function MultiSelect({
               disabled={isDisabled}
               style={{
                 textAlign: "left",
-                padding: "14px 18px",
-                borderRadius: 10,
+                padding: "14px 16px",
+                borderRadius: 12,
                 border: isSelected
-                  ? "1.5px solid #4ECBA0"
-                  : "1.5px solid #2E2E2E",
+                  ? "1.5px solid rgb(129, 79, 255)"
+                  : "1px solid #e0e0e0",
                 backgroundColor: isSelected
-                  ? "#4ECBA015"
+                  ? "rgba(129, 79, 255, 0.08)"
                   : isDisabled
-                  ? "#1c1c1c"
-                  : "#222222",
-                color: isSelected ? "#FFFFFF" : isDisabled ? "#444" : "#CCCCCC",
+                  ? "#f5f5f5"
+                  : "#ffffff",
+                color: isDisabled ? "#c0c0c0" : "#000000",
                 fontSize: 15,
                 cursor: isDisabled ? "not-allowed" : "pointer",
                 transition: "all 0.15s",
                 fontFamily: "inherit",
                 lineHeight: 1.4,
-                opacity: isDisabled ? 0.5 : 1,
                 display: "flex",
                 alignItems: "center",
                 gap: 12,
               }}
             >
-              <span
-                style={{
-                  width: 18,
-                  height: 18,
-                  borderRadius: 4,
-                  border: isSelected ? "2px solid #4ECBA0" : "2px solid #444",
-                  backgroundColor: isSelected ? "#4ECBA0" : "transparent",
-                  flexShrink: 0,
-                  transition: "all 0.15s",
-                  position: "relative",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
+              <span style={{
+                width: 18,
+                height: 18,
+                borderRadius: 4,
+                border: isSelected
+                  ? "2px solid rgb(129, 79, 255)"
+                  : isDisabled
+                  ? "2px solid #c0c0c0"
+                  : "2px solid #c0c0c0",
+                backgroundColor: isSelected ? "rgb(129, 79, 255)" : "transparent",
+                flexShrink: 0,
+                transition: "all 0.15s",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}>
                 {isSelected && (
-                  <span
-                    style={{
-                      color: "#1A1A1A",
-                      fontSize: 11,
-                      fontWeight: 800,
-                      lineHeight: 1,
-                    }}
-                  >
+                  <span style={{ color: "#ffffff", fontSize: 11, fontWeight: 800, lineHeight: 1 }}>
                     ✓
                   </span>
                 )}
@@ -145,14 +127,16 @@ export default function MultiSelect({
             style={{
               width: "100%",
               padding: "12px 16px",
-              borderRadius: 8,
-              border: "1.5px solid #2E2E2E",
-              backgroundColor: "#222",
-              color: "#FFF",
+              borderRadius: 10,
+              border: "1px solid #e0e0e0",
+              backgroundColor: "#ffffff",
+              color: "#000000",
               fontSize: 14,
               fontFamily: "inherit",
               outline: "none",
             }}
+            onFocus={(e) => (e.currentTarget.style.borderColor = "rgb(129, 79, 255)")}
+            onBlur={(e) => (e.currentTarget.style.borderColor = "#e0e0e0")}
           />
         </div>
       )}

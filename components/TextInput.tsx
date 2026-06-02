@@ -8,35 +8,21 @@ interface Props {
   optional?: boolean;
 }
 
-export default function TextInput({
-  question,
-  value,
-  onChange,
-  maxLength = 200,
-  optional,
-}: Props) {
+export default function TextInput({ question, value, onChange, maxLength = 200, optional }: Props) {
   return (
     <div>
-      <div style={{ marginBottom: 28 }}>
-        <h2
-          style={{
-            fontSize: "clamp(18px, 4vw, 22px)",
-            fontWeight: 700,
-            color: "#FFFFFF",
-            marginBottom: 8,
-            lineHeight: 1.3,
-          }}
-        >
+      <div style={{ marginBottom: 24 }}>
+        <h2 style={{
+          fontSize: "clamp(18px, 4vw, 22px)",
+          fontWeight: 700,
+          color: "#040313",
+          marginBottom: optional ? 8 : 0,
+          lineHeight: 1.3,
+        }}>
           {question}
         </h2>
         {optional && (
-          <span
-            style={{
-              fontSize: 13,
-              color: "#A0A0A0",
-              fontStyle: "italic",
-            }}
-          >
+          <span style={{ fontSize: 13, color: "#5e5e5e", fontStyle: "italic" }}>
             Optional — skip if you prefer
           </span>
         )}
@@ -52,9 +38,9 @@ export default function TextInput({
           width: "100%",
           padding: "14px 16px",
           borderRadius: 10,
-          border: "1.5px solid #2E2E2E",
-          backgroundColor: "#222222",
-          color: "#FFFFFF",
+          border: "1px solid #e0e0e0",
+          backgroundColor: "#ffffff",
+          color: "#000000",
           fontSize: 15,
           fontFamily: "inherit",
           resize: "none",
@@ -62,17 +48,10 @@ export default function TextInput({
           lineHeight: 1.5,
           transition: "border-color 0.15s",
         }}
-        onFocus={(e) => (e.currentTarget.style.borderColor = "#4ECBA040")}
-        onBlur={(e) => (e.currentTarget.style.borderColor = "#2E2E2E")}
+        onFocus={(e) => (e.currentTarget.style.borderColor = "rgb(129, 79, 255)")}
+        onBlur={(e) => (e.currentTarget.style.borderColor = "#e0e0e0")}
       />
-      <div
-        style={{
-          textAlign: "right",
-          fontSize: 12,
-          color: "#555",
-          marginTop: 6,
-        }}
-      >
+      <div style={{ textAlign: "right", fontSize: 12, color: "#5e5e5e", marginTop: 6 }}>
         {value.length}/{maxLength}
       </div>
     </div>

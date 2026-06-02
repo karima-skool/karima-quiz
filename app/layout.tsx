@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Karima Academy Course Finder",
@@ -15,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={{ backgroundColor: "#1A1A1A" }}>
-      <body className={inter.className} style={{ backgroundColor: "#1A1A1A", margin: 0 }}>
+    <html lang="en" style={{ backgroundColor: "#ffffff" }}>
+      <body className={poppins.className} style={{ backgroundColor: "#ffffff", margin: 0 }}>
         {children}
       </body>
     </html>

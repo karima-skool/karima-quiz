@@ -34,24 +34,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "#1A1A1A",
-        display: "flex",
-        flexDirection: "column",
-      }}
-    >
+    <div style={{ minHeight: "100vh", backgroundColor: "#ffffff", display: "flex", flexDirection: "column" }}>
       {screen === "intro" && <IntroScreen onBegin={handleBegin} />}
-      {screen === "quiz" && (
-        <QuizScreen onComplete={handleComplete} />
-      )}
+      {screen === "quiz" && <QuizScreen onComplete={handleComplete} />}
       {screen === "results" && (
-        <ResultsScreen
-          answers={answers}
-          sessionId={sessionId}
-          onRestart={handleRestart}
-        />
+        <ResultsScreen answers={answers} sessionId={sessionId} onRestart={handleRestart} />
       )}
     </div>
   );
