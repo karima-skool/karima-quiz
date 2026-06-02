@@ -24,9 +24,13 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
     setSaved(true);
 
     async function saveResponse() {
-      if (!supabase) return;
+      console.log("[quiz] saveResponse fired, supabase client:", supabase ? "initialised" : "NULL — env vars missing at build time");
+      if (!supabase) {
+        console.error("[quiz] Supabase client is null. NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY must be set as environment variables before the Railway build runs.");
+        return;
+      }
       try {
-        await supabase.from("quiz_responses").insert({
+        const payload = {
           session_id: sessionId,
           q1_prior_learning: answers.q1 || null,
           q1b_prior_subjects: answers.q1b.length > 0 ? answers.q1b : null,
@@ -36,13 +40,20 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
           q4_life_stage: answers.q4 || null,
           q4_other_text: answers.q4_other || null,
           q5_time_commitment: answers.q5 || null,
-          q6_format_preference: answers.q6 || null,
+          q6_format_preference: answers.q6.length > 0 ? answers.q6 : null,
           q7_interest_text: answers.q7 || null,
           q8_struggle_text: answers.q8 || null,
           recommended_course_ids: results.map((r) => r.course.id),
-        });
+        };
+        console.log("[quiz] inserting row:", JSON.stringify(payload));
+        const { error } = await supabase.from("quiz_responses").insert(payload);
+        if (error) {
+          console.error("[quiz] Supabase insert error:", error.message, error.details, error.hint);
+        } else {
+          console.log("[quiz] row saved successfully");
+        }
       } catch (err) {
-        console.error("Failed to save quiz response:", err);
+        console.error("[quiz] unexpected error saving quiz response:", err);
       }
     }
 

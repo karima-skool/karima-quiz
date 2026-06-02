@@ -112,7 +112,7 @@ export default function QuizScreen({ onComplete }: Props) {
       case "q3": return answers.q3.length > 0;
       case "q4": return !!answers.q4;
       case "q5": return !!answers.q5;
-      case "q6": return !!answers.q6;
+      case "q6": return answers.q6.length > 0;
       case "q7": return true; // optional
       case "q8": return true; // optional
       default: return false;
@@ -278,11 +278,13 @@ export default function QuizScreen({ onComplete }: Props) {
 
         {/* Q6 */}
         {currentStep === "q6" && (
-          <SingleSelect
+          <MultiSelect
             question="How do you prefer to learn?"
             options={Q6_OPTIONS}
-            value={answers.q6}
+            selected={answers.q6}
             onChange={(val) => setAnswers((a) => ({ ...a, q6: val }))}
+            maxSelect={2}
+            maxNote="You've selected 2 — deselect one to change your choice."
           />
         )}
 

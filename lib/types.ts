@@ -7,7 +7,7 @@ export interface QuizAnswers {
   q4: string;
   q4_other: string;
   q5: string;
-  q6: string;
+  q6: string[]; // multi-select, max 2
   q7: string;
   q8: string;
 }
@@ -21,7 +21,7 @@ export const EMPTY_ANSWERS: QuizAnswers = {
   q4: "",
   q4_other: "",
   q5: "",
-  q6: "",
+  q6: [],
   q7: "",
   q8: "",
 };

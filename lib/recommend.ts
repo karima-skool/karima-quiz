@@ -23,7 +23,7 @@ export interface QuizAnswers {
   q4: string;
   q4_other: string;
   q5: string;
-  q6: string;
+  q6: string[]; // multi-select, max 2
   q7: string;
   q8: string;
 }

@@ -13,23 +13,8 @@ body {
   padding: 0;
 }
 
-/* Desktop iframe: contain in viewport */
-@media (min-width: 768px) {
-  html,
-  body {
-    overflow: hidden;
-    height: 100vh;
-  }
-}
-
-/* Mobile: allow natural scroll */
-@media (max-width: 767px) {
-  html,
-  body {
-    overflow-y: auto;
-    height: auto;
-  }
-}
+/* Allow natural scroll on all breakpoints — results screen exceeds viewport height.
+   The Framer iframe should be configured to scroll based on content height. */
 
 * {
   box-sizing: border-box;
