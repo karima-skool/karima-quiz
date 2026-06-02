@@ -10,6 +10,7 @@ export interface Course {
   format: string;
   scholar: string;
   signup_url: string;
+  thumbnail_url: string;
   active: boolean;
 }
 

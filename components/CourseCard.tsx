@@ -25,11 +25,23 @@ export default function CourseCard({ scored, rank }: Props) {
         backgroundColor: "#222222",
         border: rank === 1 ? "1.5px solid #4ECBA040" : "1px solid #2E2E2E",
         borderRadius: 12,
-        padding: "20px 20px 18px",
-        position: "relative",
         overflow: "hidden",
       }}
     >
+      {/* Thumbnail — only when URL is set */}
+      {course.thumbnail_url && (
+        <div style={{ aspectRatio: "16/9", width: "100%", overflow: "hidden" }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={course.thumbnail_url}
+            alt={course.title}
+            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+          />
+        </div>
+      )}
+
+      {/* Card body */}
+      <div style={{ padding: "20px 20px 18px" }}>
       {/* Top row */}
       <div
         style={{
@@ -122,6 +134,7 @@ export default function CourseCard({ scored, rank }: Props) {
       >
         Enrol now →
       </a>
+      </div>{/* end card body */}
     </div>
   );
 }

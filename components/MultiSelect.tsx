@@ -96,30 +96,29 @@ export default function MultiSelect({
                 fontFamily: "inherit",
                 lineHeight: 1.4,
                 opacity: isDisabled ? 0.5 : 1,
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
               }}
             >
               <span
                 style={{
-                  display: "inline-block",
                   width: 18,
                   height: 18,
                   borderRadius: 4,
                   border: isSelected ? "2px solid #4ECBA0" : "2px solid #444",
                   backgroundColor: isSelected ? "#4ECBA0" : "transparent",
-                  marginRight: 12,
-                  verticalAlign: "middle",
                   flexShrink: 0,
                   transition: "all 0.15s",
                   position: "relative",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
               >
                 {isSelected && (
                   <span
                     style={{
-                      position: "absolute",
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
                       color: "#1A1A1A",
                       fontSize: 11,
                       fontWeight: 800,
@@ -130,7 +129,7 @@ export default function MultiSelect({
                   </span>
                 )}
               </span>
-              {opt}
+              <span style={{ flex: 1 }}>{opt}</span>
             </button>
           );
         })}

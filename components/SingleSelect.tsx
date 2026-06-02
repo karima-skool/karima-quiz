@@ -57,23 +57,23 @@ export default function SingleSelect({
                 transition: "all 0.15s",
                 fontFamily: "inherit",
                 lineHeight: 1.4,
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
               }}
             >
               <span
                 style={{
-                  display: "inline-block",
                   width: 18,
                   height: 18,
                   borderRadius: "50%",
                   border: selected ? "2px solid #4ECBA0" : "2px solid #444",
                   backgroundColor: selected ? "#4ECBA0" : "transparent",
-                  marginRight: 12,
-                  verticalAlign: "middle",
                   flexShrink: 0,
                   transition: "all 0.15s",
                 }}
               />
-              {opt}
+              <span style={{ flex: 1 }}>{opt}</span>
             </button>
           );
         })}
