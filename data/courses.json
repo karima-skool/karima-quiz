@@ -1,0 +1,98 @@
+[
+  {
+    "id": "KA-001",
+    "title": "Foundations of Islamic Belief",
+    "short_description": "A beginner-friendly introduction to the core principles of Aqeedah — what every Muslim should know about the pillars of faith.",
+    "topic_tags": ["aqeedah"],
+    "difficulty": "beginner",
+    "time_commitment": "1-2hrs",
+    "format": "recorded",
+    "scholar": "TBC",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-002",
+    "title": "Rulings of Marriage",
+    "short_description": "A comprehensive course on the fiqh of marriage — covering the proposal, contract, rights, and responsibilities of spouses in Islam.",
+    "topic_tags": ["fiqh", "family-marriage"],
+    "difficulty": "beginner",
+    "time_commitment": "1-2hrs",
+    "format": "live-online",
+    "scholar": "Ustadh Saman Hussain",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-003",
+    "title": "The Life of the Prophet ﷺ",
+    "short_description": "An in-depth journey through the Seerah — the biography of the Prophet Muhammad ﷺ — from his birth to his passing.",
+    "topic_tags": ["seerah"],
+    "difficulty": "beginner",
+    "time_commitment": "3-5hrs",
+    "format": "live-online",
+    "scholar": "TBC",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-004",
+    "title": "Tajweed Essentials",
+    "short_description": "Learn to recite the Quran correctly with proper Tajweed rules — suitable for those who can read Arabic and want to improve their recitation.",
+    "topic_tags": ["quran-tajweed"],
+    "difficulty": "beginner",
+    "time_commitment": "1-2hrs",
+    "format": "recorded",
+    "scholar": "TBC",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-005",
+    "title": "Foundations of Arabic",
+    "short_description": "A structured beginner course in Arabic language — building vocabulary, grammar, and reading comprehension from the ground up.",
+    "topic_tags": ["arabic"],
+    "difficulty": "beginner",
+    "time_commitment": "3-5hrs",
+    "format": "recorded",
+    "scholar": "TBC",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-006",
+    "title": "Purification of the Heart",
+    "short_description": "An exploration of Islamic spirituality and the science of the heart — covering key concepts from the tradition of Tasawwuf.",
+    "topic_tags": ["spirituality"],
+    "difficulty": "intermediate",
+    "time_commitment": "1-2hrs",
+    "format": "live-online",
+    "scholar": "TBC",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-007",
+    "title": "Signs of the Hour",
+    "short_description": "A detailed study of the major and minor signs of the Day of Judgement as found in the Quran and authenticated Hadith.",
+    "topic_tags": ["eschatology", "aqeedah"],
+    "difficulty": "intermediate",
+    "time_commitment": "1-2hrs",
+    "format": "live-online",
+    "scholar": "Shaykh Sulayman Van Ael",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  },
+  {
+    "id": "KA-008",
+    "title": "Islamic Parenting",
+    "short_description": "Practical guidance on raising children with strong Islamic values — covering tarbiyah, education, and family life from an Islamic perspective.",
+    "topic_tags": ["family-marriage", "fiqh"],
+    "difficulty": "beginner",
+    "time_commitment": "less-than-1hr",
+    "format": "recorded",
+    "scholar": "TBC",
+    "signup_url": "https://www.skool.com/karima/about",
+    "active": true
+  }
+]
