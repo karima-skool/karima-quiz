@@ -75,14 +75,14 @@ const Q6_OPTIONS = [
   "A mix of everything",
 ];
 
-type StepId = "q1" | "q1b" | "q2" | "q3" | "q4" | "q5" | "q6" | "q7" | "q8";
+type StepId = "q1" | "q1b" | "q2" | "q3" | "q4" | "q5" | "q6" | "q7" | "q8" | "q9";
 
 function getSteps(answers: QuizAnswers): StepId[] {
   const base: StepId[] = ["q1"];
   if (answers.q1 && answers.q1 !== "No, I'm just getting started") {
     base.push("q1b");
   }
-  base.push("q2", "q3", "q4", "q5", "q6", "q7", "q8");
+  base.push("q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9");
   return base;
 }
 
@@ -94,7 +94,7 @@ export default function QuizScreen({ onComplete }: Props) {
   const steps = getSteps(answers);
   const currentStep = steps[stepIndex];
   // For progress, use a stable total (with q1b) or without, based on current q1
-  const stableTotal = answers.q1 && answers.q1 !== "No, I'm just getting started" ? 9 : 8;
+  const stableTotal = answers.q1 && answers.q1 !== "No, I'm just getting started" ? 10 : 9;
 
   function transition(fn: () => void) {
     setVisible(false);
@@ -115,6 +115,7 @@ export default function QuizScreen({ onComplete }: Props) {
       case "q6": return answers.q6.length > 0;
       case "q7": return true; // optional
       case "q8": return true; // optional
+      case "q9": return true; // optional
       default: return false;
     }
   }
@@ -310,6 +311,62 @@ export default function QuizScreen({ onComplete }: Props) {
             maxLength={200}
             optional
           />
+        )}
+
+        {/* Q9 */}
+        {currentStep === "q9" && (
+          <div>
+            <h2 style={{
+              fontSize: "clamp(18px, 4vw, 22px)",
+              fontWeight: 700,
+              color: "#040313",
+              marginBottom: 8,
+              lineHeight: 1.3,
+            }}>
+              One last thing — which age group do you fall into?
+            </h2>
+            <p style={{ fontSize: 13, color: "#5e5e5e", marginBottom: 24 }}>
+              This helps us improve our courses and content.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {["Under 18", "18–24", "25–34", "35–44", "45–54", "55+", "Prefer not to say"].map((opt) => {
+                const selected = answers.q9 === opt;
+                return (
+                  <button
+                    key={opt}
+                    onClick={() => setAnswers((a) => ({ ...a, q9: selected ? "" : opt }))}
+                    style={{
+                      textAlign: "left",
+                      padding: "14px 16px",
+                      borderRadius: 12,
+                      border: selected ? "1.5px solid rgb(129, 79, 255)" : "1px solid #e0e0e0",
+                      backgroundColor: selected ? "rgba(129, 79, 255, 0.08)" : "#ffffff",
+                      color: "#000000",
+                      fontSize: 15,
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                      fontFamily: "inherit",
+                      lineHeight: 1.4,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 12,
+                    }}
+                  >
+                    <span style={{
+                      width: 18,
+                      height: 18,
+                      borderRadius: "50%",
+                      border: selected ? "2px solid rgb(129, 79, 255)" : "2px solid #c0c0c0",
+                      backgroundColor: selected ? "rgb(129, 79, 255)" : "transparent",
+                      flexShrink: 0,
+                      transition: "all 0.15s",
+                    }} />
+                    <span style={{ flex: 1 }}>{opt}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         )}
 
         {/* Next / Submit */}

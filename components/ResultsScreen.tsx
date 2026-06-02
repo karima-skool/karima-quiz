@@ -10,9 +10,10 @@ interface Props {
   answers: QuizAnswers;
   sessionId: string;
   onRestart: () => void;
+  onBrowse: () => void;
 }
 
-export default function ResultsScreen({ answers, sessionId, onRestart }: Props) {
+export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse }: Props) {
   const [saved, setSaved] = useState(false);
 
   const { results, topCourse } = getRecommendations(answers);
@@ -42,6 +43,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
           q6_format_preference: answers.q6.length > 0 ? answers.q6 : null,
           q7_interest_text: answers.q7 || null,
           q8_struggle_text: answers.q8 || null,
+          q9_age_group: answers.q9 || null,
           recommended_course_ids: results.map((r) => r.course.id),
         };
         console.log("[quiz] inserting row:", JSON.stringify(payload));
@@ -148,6 +150,29 @@ export default function ResultsScreen({ answers, sessionId, onRestart }: Props) 
                 : "This is a great starting point for any learning journey."}
             </span>
           </p>
+        </div>
+
+        {/* View all courses */}
+        <div style={{ textAlign: "center", marginBottom: 16 }}>
+          <button
+            onClick={onBrowse}
+            style={{
+              background: "#ffffff",
+              border: "1px solid rgb(129, 79, 255)",
+              borderRadius: 24,
+              color: "rgb(129, 79, 255)",
+              fontSize: 15,
+              fontWeight: 500,
+              padding: "12px 24px",
+              cursor: "pointer",
+              fontFamily: "inherit",
+              transition: "background 0.15s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(129,79,255,0.04)")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "#ffffff")}
+          >
+            View all courses →
+          </button>
         </div>
 
         {/* Restart */}

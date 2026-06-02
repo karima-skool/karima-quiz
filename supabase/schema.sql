@@ -22,3 +22,6 @@ create table quiz_responses (
 alter table quiz_responses
   alter column q6_format_preference type text[]
   using array[q6_format_preference];
+
+-- ── Migration: Q9 age group added ────────────────────────────────────────────
+alter table quiz_responses add column if not exists q9_age_group text;

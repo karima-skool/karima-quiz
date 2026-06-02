@@ -5,8 +5,9 @@ import { QuizAnswers, EMPTY_ANSWERS } from "@/lib/types";
 import IntroScreen from "@/components/IntroScreen";
 import QuizScreen from "@/components/QuizScreen";
 import ResultsScreen from "@/components/ResultsScreen";
+import BrowseScreen from "@/components/BrowseScreen";
 
-type Screen = "intro" | "quiz" | "results";
+type Screen = "intro" | "quiz" | "results" | "browse";
 
 function generateSessionId(): string {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
@@ -33,13 +34,22 @@ export default function Home() {
     setScreen("intro");
   }, []);
 
+  const handleBrowse = useCallback(() => setScreen("browse"), []);
+  const handleBackToResults = useCallback(() => setScreen("results"), []);
+
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "#ffffff", display: "flex", flexDirection: "column" }}>
       {screen === "intro" && <IntroScreen onBegin={handleBegin} />}
       {screen === "quiz" && <QuizScreen onComplete={handleComplete} />}
       {screen === "results" && (
-        <ResultsScreen answers={answers} sessionId={sessionId} onRestart={handleRestart} />
+        <ResultsScreen
+          answers={answers}
+          sessionId={sessionId}
+          onRestart={handleRestart}
+          onBrowse={handleBrowse}
+        />
       )}
+      {screen === "browse" && <BrowseScreen onBack={handleBackToResults} />}
     </div>
   );
 }

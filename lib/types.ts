@@ -10,6 +10,7 @@ export interface QuizAnswers {
   q6: string[]; // multi-select, max 2
   q7: string;
   q8: string;
+  q9: string; // age group, optional
 }
 
 export const EMPTY_ANSWERS: QuizAnswers = {
@@ -24,4 +25,5 @@ export const EMPTY_ANSWERS: QuizAnswers = {
   q6: [],
   q7: "",
   q8: "",
+  q9: "",
 };
