@@ -63,23 +63,40 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
 
   return (
     <div style={{ minHeight: "100vh", backgroundColor: "#ffffff" }}>
-      {/* Nav */}
+      {/* Sticky nav */}
       <div style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 10,
         background: "#ffffff",
         borderBottom: "1px solid #f0ebff",
-        padding: "16px 20px",
+        padding: "12px 20px",
         display: "flex",
         alignItems: "center",
+        justifyContent: "space-between",
       }}>
-        <span style={{
-          color: "rgb(129, 79, 255)",
-          fontSize: 12,
-          fontWeight: 600,
-          letterSpacing: "0.1em",
-          textTransform: "uppercase",
-        }}>
-          Karima Academy
+        <span style={{ fontSize: 15, fontWeight: 600, color: "#040313" }}>
+          Your Results
         </span>
+        <button
+          onClick={onBrowse}
+          style={{
+            background: "#ffffff",
+            border: "1px solid rgb(129, 79, 255)",
+            borderRadius: 20,
+            color: "rgb(129, 79, 255)",
+            fontSize: 14,
+            fontWeight: 500,
+            padding: "8px 16px",
+            cursor: "pointer",
+            fontFamily: "inherit",
+            transition: "background 0.15s",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(129,79,255,0.04)")}
+          onMouseLeave={(e) => (e.currentTarget.style.background = "#ffffff")}
+        >
+          View all courses →
+        </button>
       </div>
 
       {/* Content */}
@@ -150,29 +167,6 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
                 : "This is a great starting point for any learning journey."}
             </span>
           </p>
-        </div>
-
-        {/* View all courses */}
-        <div style={{ textAlign: "center", marginBottom: 16 }}>
-          <button
-            onClick={onBrowse}
-            style={{
-              background: "#ffffff",
-              border: "1px solid rgb(129, 79, 255)",
-              borderRadius: 24,
-              color: "rgb(129, 79, 255)",
-              fontSize: 15,
-              fontWeight: 500,
-              padding: "12px 24px",
-              cursor: "pointer",
-              fontFamily: "inherit",
-              transition: "background 0.15s",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(129,79,255,0.04)")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "#ffffff")}
-          >
-            View all courses →
-          </button>
         </div>
 
         {/* Restart */}

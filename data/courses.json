@@ -3,7 +3,10 @@
     "id": "KA-002",
     "title": "I Asked the Prophet ﷺ",
     "short_description": "A transformative journey built on one simple question: If the Prophet ﷺ were with us today, what should we ask him in order to be saved? A 30-year compilation of Prophetic answers to the most important questions a human can ask.",
-    "topic_tags": ["seerah", "spirituality"],
+    "topic_tags": [
+      "seerah",
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -16,7 +19,9 @@
     "id": "KA-003",
     "title": "Fiqh of Hajj: A Complete Guide to Performing Hajj",
     "short_description": "Everything you need to know before you stand at Arafat. A comprehensive guide to the rulings and practices of Hajj.",
-    "topic_tags": ["fiqh"],
+    "topic_tags": [
+      "fiqh"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -29,7 +34,9 @@
     "id": "KA-004",
     "title": "Tafseer of the Qur'an",
     "short_description": "A journey into how the Qur'an reveals itself — verse by verse, layer by layer. Develops the method and mindset of tafseer: how to read revelation as both guidance and transformation.",
-    "topic_tags": ["quran-tafseer"],
+    "topic_tags": [
+      "quran-tafseer"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "live-online",
@@ -42,7 +49,9 @@
     "id": "KA-005",
     "title": "Weekly: Life of The Prophet ﷺ",
     "short_description": "The life of our beloved Prophet Muhammad ﷺ is a perfect guide for every role we fulfil. Dive deep into the Seerah and connect with the life of the Greatest Man to walk the earth.",
-    "topic_tags": ["seerah"],
+    "topic_tags": [
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "live-online",
@@ -55,7 +64,10 @@
     "id": "KA-006",
     "title": "Family In The Qur'an",
     "short_description": "Stories of families from the Qur'an. Devoted fathers, heartbroken parents, disloyal spouses. Learn what builds a family, and what tears one apart.",
-    "topic_tags": ["family-marriage", "quran-tafseer"],
+    "topic_tags": [
+      "family-marriage",
+      "quran-tafseer"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "live-online",
@@ -68,7 +80,9 @@
     "id": "KA-007",
     "title": "Dhikr and Flicker",
     "short_description": "A practical and transformative journey into Dhikr (remembrance) and du'a (supplication) with Shaykh Sulayman Van Ael.",
-    "topic_tags": ["spirituality"],
+    "topic_tags": [
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "less-than-1hr",
     "format": "recorded",
@@ -81,7 +95,10 @@
     "id": "KA-008",
     "title": "The Rulings of Marriage",
     "short_description": "A course on the rulings of marriage and family life: the rights, responsibilities, procedures and rulings every Muslim should know before, during and after the nikkah.",
-    "topic_tags": ["fiqh", "family-marriage"],
+    "topic_tags": [
+      "fiqh",
+      "family-marriage"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "live-online",
@@ -94,7 +111,9 @@
     "id": "KA-009",
     "title": "Zakat Made Easy: 4 Week Course",
     "short_description": "The principles, calculations, and rulings of Zakat, designed to help you fulfil one of Islam's greatest acts of worship with confidence.",
-    "topic_tags": ["fiqh"],
+    "topic_tags": [
+      "fiqh"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -107,7 +126,9 @@
     "id": "KA-010",
     "title": "Juz Amma Tafseer",
     "short_description": "A collection of Tafseer classes exploring the meaning of the Surahs in the last chapter of the Quran, based on the Tafseer by Imam Razi (RA).",
-    "topic_tags": ["quran-tafseer"],
+    "topic_tags": [
+      "quran-tafseer"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -120,7 +141,9 @@
     "id": "KA-013",
     "title": "Why History Matters",
     "short_description": "Dr Yakoob Ahmed reframes time, progress, and modernity through Qur'an, the cosmos, and the patterns of history, calling Muslims to think and act with iman and generational vision.",
-    "topic_tags": ["seerah"],
+    "topic_tags": [
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -133,20 +156,25 @@
     "id": "KA-014",
     "title": "Clarifying Misconceptions — Matters of Faith",
     "short_description": "Practical steps on how to approach the challenges and difficulties we face in modern life, based on the Quran and Sunnah, with action-orientated remedies for real circumstances.",
-    "topic_tags": ["aqeedah", "spirituality"],
+    "topic_tags": [
+      "aqeedah",
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/aefb09ceb40848468ea312b051ac649b9dc5a76c20044786a8759f6e40084c7b.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/aefb09ceb40848468ea312b051ac649b9dc5a76c20044786a8759f6e40084c7b",
     "active": true
   },
   {
     "id": "KA-015",
     "title": "Weekly: Fiqh — Islamic Rulings",
     "short_description": "Fiqh is the way Muslims understand and follow Islamic rules and teachings. This weekly class helps you know what is right and wrong based on Islamic law.",
-    "topic_tags": ["fiqh"],
+    "topic_tags": [
+      "fiqh"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "live-online",
@@ -159,33 +187,41 @@
     "id": "KA-016",
     "title": "Monthly History of Islam & The Modern Times",
     "short_description": "A broad sweep of the major historical personalities, events and processes of the Islamic Age — from the High Caliphate Period through to the Great Empires.",
-    "topic_tags": ["seerah"],
+    "topic_tags": [
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "less-than-1hr",
     "format": "live-online",
     "scholar": "Dr Ridhwan",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/876c6534ea074f89bbb225776b944ce7c135d1c603284926a2b253b09b26d7f6.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/876c6534ea074f89bbb225776b944ce7c135d1c603284926a2b253b09b26d7f6",
     "active": true
   },
   {
     "id": "KA-017",
     "title": "Divine Names of Allah — Compass of the Traveller",
     "short_description": "The Divine Names taught from a linguistic and spiritual-practical point of view, divided into 16 categories to help you connect with each Name's meaning and impact on your life.",
-    "topic_tags": ["aqeedah", "spirituality"],
+    "topic_tags": [
+      "aqeedah",
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/bfa2e0be342a4a67bac7a1433f8fc0ec05421b7466df48d6993690bbc5d763d5",
     "active": true
   },
   {
     "id": "KA-019",
     "title": "Tafsir of Surah Yaseen",
     "short_description": "A 5 hour immersive tafsir course on Surah Ya-Seen, using Ibn Ashur's powerful commentary to unlock meaning, reflection, and spiritual clarity.",
-    "topic_tags": ["quran-tafseer", "spirituality"],
+    "topic_tags": [
+      "quran-tafseer",
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
@@ -198,20 +234,24 @@
     "id": "KA-020",
     "title": "The Art of Intentions — Compass of the Traveller",
     "short_description": "The fiqh of pure intentions — ikhlas. The intention is the core of our deeds; without it we are bodies without souls. A course on building sincerity in worship and daily life.",
-    "topic_tags": ["spirituality"],
+    "topic_tags": [
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/b78d8d6244794b79a6ef932787a33dd6298ba3da6f154f169e2855528887954e.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/b78d8d6244794b79a6ef932787a33dd6298ba3da6f154f169e2855528887954e",
     "active": true
   },
   {
     "id": "KA-021",
     "title": "Essential Muslim Beliefs",
     "short_description": "An in-depth journey through Islamic theology rooted in the Maturidi tradition, equipping you with the intellectual tools to understand and defend your faith with clarity and confidence.",
-    "topic_tags": ["aqeedah"],
+    "topic_tags": [
+      "aqeedah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
@@ -224,98 +264,117 @@
     "id": "KA-022",
     "title": "The World of the Angels — Compass of The Traveller",
     "short_description": "Moving beyond abstract belief to show how understanding the mala'ika shapes the way we live, think, and connect with Allah. Belief in angels strengthens identity and protects the heart.",
-    "topic_tags": ["aqeedah", "spirituality"],
+    "topic_tags": [
+      "aqeedah",
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/010933c6e02449ca9f1681dc641df4ced9d34bac9e6748c7871a41842117ad2d.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/010933c6e02449ca9f1681dc641df4ced9d34bac9e6748c7871a41842117ad2d",
     "active": true
   },
   {
     "id": "KA-023",
     "title": "Minhaj al-Abideen: A Guide to Spiritual Success",
     "short_description": "Al-Ghazali's final book charts the pitfalls and obstacles to overcome on the path to Paradise. A guide for seekers of eternal life to resist hindrances and find salvation.",
-    "topic_tags": ["spirituality"],
+    "topic_tags": [
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/f1f80d305b6d472dbe01e30516c24470f7bbb7e41c11486eb26e0db5973b52df.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/f1f80d305b6d472dbe01e30516c24470f7bbb7e41c11486eb26e0db5973b52df",
     "active": true
   },
   {
     "id": "KA-024",
     "title": "Aqeedah Tahawi: Foundations of Faith",
     "short_description": "Imam al-Tahawi's classic creed explains the core beliefs of Islam clearly — covering God, the Prophets, life after death, and the essential pillars of Islamic belief.",
-    "topic_tags": ["aqeedah"],
+    "topic_tags": [
+      "aqeedah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/5da9743f147d49e986cbe8dc9be3f2d28c2c0656a625405980a22341dc4d1d05.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/5da9743f147d49e986cbe8dc9be3f2d28c2c0656a625405980a22341dc4d1d05",
     "active": true
   },
   {
     "id": "KA-025",
     "title": "Ihya Uloom ud Deen",
     "short_description": "Imam Al-Ghazali's cornerstone of Islamic spirituality. A journey to embody sincerity, knowledge, and self-purification — reviving the soul and aligning actions with intentions.",
-    "topic_tags": ["spirituality"],
+    "topic_tags": [
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/ba28056b325f4d289f8f3f16bdb60ab74e9fe32906b74f6b9fbcf391ee18322d.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/ba28056b325f4d289f8f3f16bdb60ab74e9fe32906b74f6b9fbcf391ee18322d",
     "active": true
   },
   {
     "id": "KA-026",
     "title": "The Meaning and Message of Surah Al-Buruj",
     "short_description": "An exploration of Surah Al-Buruj — perseverance, justice, and the eternal reward of the believers. Reflecting on the people of the trench and the majesty of Allah as the Ever-Watchful.",
-    "topic_tags": ["quran-tafseer"],
+    "topic_tags": [
+      "quran-tafseer"
+    ],
     "difficulty": "beginner",
     "time_commitment": "less-than-1hr",
     "format": "recorded",
     "scholar": "Dr Sohail Hanif",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/c960ebbe1a9f48eabdb33c8c7423fe7559d962938c8b4b5e9dda723b8268d536.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/c960ebbe1a9f48eabdb33c8c7423fe7559d962938c8b4b5e9dda723b8268d536",
     "active": true
   },
   {
     "id": "KA-027",
     "title": "The Questions of the Companions",
     "short_description": "A transformational journey through the questions of the Companions answered through the beautiful hadith of our beloved Prophet ﷺ.",
-    "topic_tags": ["seerah", "spirituality"],
+    "topic_tags": [
+      "seerah",
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/dd8e458ea42845f7a252eb8ddc979337b21ffaa82a1a43c2ac0b0f6f2f9fb433.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/dd8e458ea42845f7a252eb8ddc979337b21ffaa82a1a43c2ac0b0f6f2f9fb433",
     "active": true
   },
   {
     "id": "KA-028",
     "title": "Surah al-Baqarah Tafseer",
     "short_description": "Unlock the power of Surah Al-Baqarah. A roadmap to spiritual growth, clarity, and purpose — not just understanding the Qur'an but living it in everyday life.",
-    "topic_tags": ["quran-tafseer"],
+    "topic_tags": [
+      "quran-tafseer"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/8041d1da185744888c14de589f23a953e94ba970488c435c83755b070025e2ec.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/8041d1da185744888c14de589f23a953e94ba970488c435c83755b070025e2ec",
     "active": true
   },
   {
     "id": "KA-030",
     "title": "Hollywood & Islam",
     "short_description": "How Hollywood shapes cultural narratives and moral perspectives — and what Muslims need to understand and teach their families about navigating its pervasive influence.",
-    "topic_tags": ["aqeedah", "family-marriage"],
+    "topic_tags": [
+      "aqeedah",
+      "family-marriage"
+    ],
     "difficulty": "beginner",
     "time_commitment": "less-than-1hr",
     "format": "recorded",
@@ -328,7 +387,10 @@
     "id": "KA-031",
     "title": "Prophetic Supplications — Compass of the Traveller",
     "short_description": "Living the daily supplications of the Prophet ﷺ — practical lessons on using du'a to bring mindfulness, spiritual consciousness, and a deeper connection to Allah into daily life.",
-    "topic_tags": ["spirituality", "seerah"],
+    "topic_tags": [
+      "spirituality",
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -341,7 +403,9 @@
     "id": "KA-032",
     "title": "Mankind's Journey to The Hereafter",
     "short_description": "Explore the realities of life after death in Kitab ul-Tawahhum. What leads to Paradise or Hell-fire, the soul's journey from death to judgement, and the actions that determine eternal reward.",
-    "topic_tags": ["eschatology"],
+    "topic_tags": [
+      "eschatology"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
@@ -354,20 +418,24 @@
     "id": "KA-033",
     "title": "Madarij As Salikin — Ranks of the Divine Seekers",
     "short_description": "A study of Ibn Al Qayyim's Madarij As Salikin — a classical text on the stations and ranks of the spiritual path to Allah.",
-    "topic_tags": ["spirituality"],
+    "topic_tags": [
+      "spirituality"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
-    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/01dcbb8a4a85482c89031a71704c76d39f3507e1ab9e4cb9a3e91224949c8e23.jpg",
+    "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/01dcbb8a4a85482c89031a71704c76d39f3507e1ab9e4cb9a3e91224949c8e23",
     "active": true
   },
   {
     "id": "KA-034",
     "title": "Happy Muslim Marriage",
     "short_description": "Marriage is the union of two independent human beings. A course navigating the balance between Islamic guidance and modern cultural assumptions to help Muslims build a life of purity.",
-    "topic_tags": ["family-marriage"],
+    "topic_tags": [
+      "family-marriage"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
@@ -380,7 +448,9 @@
     "id": "KA-035",
     "title": "The Story of Musa & Firaun (Pharaoh)",
     "short_description": "Explore Prophet Musa's courageous stand against Pharaoh's tyranny — uncovering profound lessons of resistance, faith, and justice connected to the struggles of Muslims today.",
-    "topic_tags": ["seerah"],
+    "topic_tags": [
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -393,7 +463,9 @@
     "id": "KA-036",
     "title": "Proofs of God's Existence",
     "short_description": "An incredible starting point for exploring arguments for God's existence — accessible, rigorous, and relevant for Muslims navigating faith and doubt in a modern world.",
-    "topic_tags": ["aqeedah"],
+    "topic_tags": [
+      "aqeedah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -406,7 +478,9 @@
     "id": "KA-037",
     "title": "Fiqh History Explained",
     "short_description": "The evolution of Islamic jurisprudence — how early rulings developed, how the schools of thought emerged, and what this means for Muslims navigating Islamic law today.",
-    "topic_tags": ["fiqh"],
+    "topic_tags": [
+      "fiqh"
+    ],
     "difficulty": "beginner",
     "time_commitment": "less-than-1hr",
     "format": "recorded",
@@ -419,7 +493,9 @@
     "id": "KA-039",
     "title": "The Life and Times of Salahuddin Ayubi",
     "short_description": "The remarkable story of Salahuddin Ayubi — his leadership, faith, and the liberation of Jerusalem. A study in Islamic history, courage, and purpose.",
-    "topic_tags": ["seerah"],
+    "topic_tags": [
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
@@ -432,7 +508,10 @@
     "id": "KA-040",
     "title": "Tafsir — Surah Ahzab",
     "short_description": "Verses 21-27 of Surah Al-Ahzab — the Battle of the Trench, divine intervention, and the importance of trusting Allah's promises and following the Prophet's example in hardship.",
-    "topic_tags": ["quran-tafseer", "seerah"],
+    "topic_tags": [
+      "quran-tafseer",
+      "seerah"
+    ],
     "difficulty": "beginner",
     "time_commitment": "less-than-1hr",
     "format": "recorded",
@@ -445,7 +524,10 @@
     "id": "KA-041",
     "title": "Science or Signs? Qur'an, Science & The World",
     "short_description": "The primary miracle of Islam is the Qur'an. This course explores how to understand and convey that miracle in the modern age — bridging the Qur'an, science, and the natural world.",
-    "topic_tags": ["aqeedah", "quran-tafseer"],
+    "topic_tags": [
+      "aqeedah",
+      "quran-tafseer"
+    ],
     "difficulty": "beginner",
     "time_commitment": "3-5hrs",
     "format": "recorded",
@@ -458,7 +540,9 @@
     "id": "KA-042",
     "title": "What Does It Mean to Be Hanafi?",
     "short_description": "Over a quarter of Muslims follow the Hanafi Madhab. This course explores its origins, its great scholars, and its continuing role in Islamic finance, law, and daily practice worldwide.",
-    "topic_tags": ["fiqh"],
+    "topic_tags": [
+      "fiqh"
+    ],
     "difficulty": "beginner",
     "time_commitment": "1-2hrs",
     "format": "recorded",
