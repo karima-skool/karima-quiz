@@ -150,7 +150,7 @@
     "scholar": "Dr Yakoob Ahmed",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/8968d1acc7cd4670a3bc745d42b618b127592c2f3f354007879c0f65d0d84364.jpg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-014",
@@ -228,7 +228,7 @@
     "scholar": "Dr Sohaib Saeed",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Tafsir%20of%20Surah%20Yaseen%20.jpeg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-020",
@@ -334,7 +334,7 @@
     "scholar": "Dr Sohail Hanif",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/c960ebbe1a9f48eabdb33c8c7423fe7559d962938c8b4b5e9dda723b8268d536",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-027",
@@ -381,7 +381,7 @@
     "scholar": "Imam Tom Facchine",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Hollywood%20%26%20Islam%20.jpeg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-031",
@@ -440,7 +440,7 @@
     "time_commitment": "3-5hrs",
     "format": "recorded",
     "scholar": "Mufti Abdur Rehman Mangera",
-    "signup_url": "https://www.skool.com/karima/about",
+    "signup_url": "https://www.skool.com/karima/classroom/6b920af5",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Happy%20Muslim%20Marriage%20.jpeg",
     "active": true
   },
@@ -457,7 +457,7 @@
     "scholar": "Shaykh Hisham Abu Yusuf",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/The%20Story%20of%20Musa%20%26%20Firaun%20.jpeg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-036",
@@ -470,7 +470,7 @@
     "time_commitment": "1-2hrs",
     "format": "recorded",
     "scholar": "Dr Shoaib Malik",
-    "signup_url": "https://www.skool.com/karima/about",
+    "signup_url": "https://www.skool.com/karima/classroom/2c32f065",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Proofs%20of%20God's%20Existence.jpeg",
     "active": true
   },
@@ -485,7 +485,7 @@
     "time_commitment": "less-than-1hr",
     "format": "recorded",
     "scholar": "Shaykh Sulayman Van Ael",
-    "signup_url": "https://www.skool.com/karima/about",
+    "signup_url": "https://www.skool.com/karima/classroom/79b1964c",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Fiqh%20History%20Explained.jpeg",
     "active": true
   },
@@ -502,7 +502,7 @@
     "scholar": "Shaykh Salman Younas & Dr Abdul Rahman Azzam",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Life%20and%20Times%20of%20Salahuddin%20Ayubi.jpeg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-040",
@@ -518,7 +518,7 @@
     "scholar": "Maulana Asim Ayub",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Tafsir%20of%20Surah%20Ahzab.jpeg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-041",
@@ -534,7 +534,7 @@
     "scholar": "Shaykh Yousef Wahb & Shaykh Dr Sohaib Saeed",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Science%20or%20Signs%3F.jpeg",
-    "active": true
+    "active": false
   },
   {
     "id": "KA-042",
@@ -549,6 +549,83 @@
     "scholar": "Shaykh Salah Abul Hajj",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/What%20Does%20It%20Mean%20to%20Be%20Hanafi%3F%20%20.jpeg",
+    "active": false
+  },
+  {
+    "id": "KA-COL-001",
+    "title": "Tafseer Specials",
+    "short_description": "Focused tafseer sessions from guest scholars — exploring the meaning, context, and lessons of specific Surahs. Each session stands alone and can be watched in one sitting.",
+    "topic_tags": [
+      "quran-tafseer"
+    ],
+    "difficulty": "beginner",
+    "time_commitment": "1-2hrs",
+    "format": "recorded",
+    "scholar": "Various Scholars",
+    "signup_url": "https://www.skool.com/karima/classroom/b7be3414",
+    "thumbnail_url": "",
+    "active": true
+  },
+  {
+    "id": "KA-COL-002",
+    "title": "Seerah & History Specials",
+    "short_description": "One-off sessions from guest scholars on the lives of the Prophet ﷺ and the great figures of Islamic history. Each session stands alone.",
+    "topic_tags": [
+      "seerah"
+    ],
+    "difficulty": "beginner",
+    "time_commitment": "1-2hrs",
+    "format": "recorded",
+    "scholar": "Various Scholars",
+    "signup_url": "https://www.skool.com/karima/classroom/49862141",
+    "thumbnail_url": "",
+    "active": true
+  },
+  {
+    "id": "KA-COL-003",
+    "title": "Islam & Modern Life",
+    "short_description": "Guest talks on faith, science, culture and the questions Muslims face today. Grounded in Islamic scholarship, relevant to everyday life.",
+    "topic_tags": [
+      "aqeedah",
+      "fiqh"
+    ],
+    "difficulty": "beginner",
+    "time_commitment": "1-2hrs",
+    "format": "recorded",
+    "scholar": "Various Scholars",
+    "signup_url": "https://www.skool.com/karima/classroom/9a156fec",
+    "thumbnail_url": "",
+    "active": true
+  },
+  {
+    "id": "KA-COL-004",
+    "title": "Post Fajr Reminders",
+    "short_description": "Short post-Fajr reminder classes from Shaykh Sulayman Van Ael. Start your morning with a few minutes of reflection and remembrance.",
+    "topic_tags": [
+      "spirituality"
+    ],
+    "difficulty": "beginner",
+    "time_commitment": "less-than-1hr",
+    "format": "live-online",
+    "scholar": "Shaykh Sulayman Van Ael",
+    "signup_url": "https://www.skool.com/karima/classroom/2ae90568",
+    "thumbnail_url": "",
+    "active": true
+  },
+  {
+    "id": "KA-COL-005",
+    "title": "Post Isha Hadeeth Reminders",
+    "short_description": "Short post-Isha reminder classes from Shaykh Sulayman Van Ael. End your night with a lesson from the Hadeeth of the Prophet  ﷺ.",
+    "topic_tags": [
+      "spirituality",
+      "seerah"
+    ],
+    "difficulty": "beginner",
+    "time_commitment": "less-than-1hr",
+    "format": "live-online",
+    "scholar": "Shaykh Sulayman Van Ael",
+    "signup_url": "https://www.skool.com/karima/classroom/4fe16b5a",
+    "thumbnail_url": "",
     "active": true
   }
 ]
