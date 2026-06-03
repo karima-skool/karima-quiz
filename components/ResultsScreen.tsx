@@ -20,7 +20,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
 
   const { results, topCourse } = getRecommendations(answers);
   const summary = buildProfileSummary(answers);
-  const liveCourses = (coursesData as Course[]).filter(c => c.active && c.is_live);
+  const liveCourses = (coursesData as Course[]).filter(c => c.active === true && c.is_live === true);
 
   useEffect(() => {
     if (saved) return;

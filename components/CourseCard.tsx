@@ -16,7 +16,7 @@ const FORMAT_LABELS: Record<string, string> = {
 export default function CourseCard({ scored }: Props) {
   const { course, matchReasons } = scored;
   const url = course.signup_url || "https://www.skool.com/karima/about";
-  const formatLabel = FORMAT_LABELS[course.format] ?? course.format;
+  const formatLabel = course.is_live ? "Live online" : (FORMAT_LABELS[course.format] ?? course.format);
   const scholar = course.scholar === "TBC" ? "Coming soon" : course.scholar;
 
   return (
