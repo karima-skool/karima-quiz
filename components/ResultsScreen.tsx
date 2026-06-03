@@ -154,7 +154,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
               Live &amp; Weekly Classes
             </h2>
             <p style={{ fontSize: 14, color: "#5e5e5e", marginBottom: 20 }}>
-              Join us live — these classes are running right now.
+              Join a live class — new sessions every week.
             </p>
             <div className="live-grid">
               {liveCourses.map(course => (
