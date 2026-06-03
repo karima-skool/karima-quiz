@@ -48,7 +48,7 @@ const TIME_MAP: Record<string, string> = {
   "As much as it takes — I'm serious about this": "any",
 };
 
-const TAG_LABELS: Record<string, string> = {
+export const TAG_LABELS: Record<string, string> = {
   aqeedah: "Islamic belief",
   fiqh: "Fiqh",
   seerah: "Seerah",

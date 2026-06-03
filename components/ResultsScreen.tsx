@@ -21,6 +21,8 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
   const { results, topCourse } = getRecommendations(answers);
   const summary = buildProfileSummary(answers);
   const liveCourses = (coursesData as Course[]).filter(c => c.active === true && c.is_live === true);
+  // Fix 1: exclude live courses from recommended section to avoid duplication
+  const recommendedResults = results.filter(r => r.course.is_live !== true);
 
   useEffect(() => {
     if (saved) return;
@@ -144,15 +146,19 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
         {/* Live & Weekly Classes */}
         {liveCourses.length > 0 && (
           <div style={{ marginBottom: 40 }}>
+            <style>{`
+              .live-grid { display: flex; flex-direction: column; gap: 20px; }
+              @media (min-width: 768px) { .live-grid { display: grid; grid-template-columns: repeat(2, 1fr); } }
+            `}</style>
             <h2 style={{ fontSize: 18, fontWeight: 700, color: "#040313", marginBottom: 6 }}>
               Live &amp; Weekly Classes
             </h2>
             <p style={{ fontSize: 14, color: "#5e5e5e", marginBottom: 20 }}>
               Join us live — these classes are running right now.
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            <div className="live-grid">
               {liveCourses.map(course => (
-                <LiveCourseCard key={course.id} course={course} />
+                <LiveCourseCard key={course.id} course={course} userTags={answers.q3} />
               ))}
             </div>
           </div>
@@ -164,7 +170,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
             Recommended courses
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-            {results.map((scored, i) => (
+            {recommendedResults.map((scored, i) => (
               <CourseCard key={scored.course.id} scored={scored} rank={i + 1} />
             ))}
           </div>
