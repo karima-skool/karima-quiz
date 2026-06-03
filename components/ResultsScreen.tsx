@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { QuizAnswers } from "@/lib/types";
-import { getRecommendations, buildProfileSummary, Course } from "@/lib/recommend";
+import { getRecommendations, Course } from "@/lib/recommend";
 import { supabase } from "@/lib/supabase";
 import CourseCard from "@/components/CourseCard";
 import LiveCourseCard from "@/components/LiveCourseCard";
@@ -19,7 +19,6 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
   const [saved, setSaved] = useState(false);
 
   const { results, topCourse } = getRecommendations(answers);
-  const summary = buildProfileSummary(answers);
   const liveCourses = (coursesData as Course[]).filter(c => c.active === true && c.is_live === true);
   // Fix 1: exclude live courses from recommended section to avoid duplication
   const recommendedResults = results.filter(r => r.course.is_live !== true);
@@ -138,9 +137,36 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
           }}>
             Your profile
           </p>
-          <p style={{ fontSize: 15, color: "#000000", lineHeight: 1.7 }}>
-            {summary}
-          </p>
+          <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 10 }}>
+            {[
+              {
+                label: "Prior learning",
+                value: answers.q1 || "Not specified",
+              },
+              {
+                label: "Interests",
+                value: answers.q3.length > 0
+                  ? answers.q3.map((t: string) => ({ aqeedah: "Islamic belief", fiqh: "Fiqh", seerah: "Seerah", "quran-tafseer": "Qur'an & Tafseer", arabic: "Arabic", "family-marriage": "Family life", spirituality: "Spirituality", eschatology: "Eschatology" }[t] ?? t)).join(", ")
+                  : "Not specified",
+              },
+              {
+                label: "Goal",
+                value: answers.q2 || "Not specified",
+              },
+              {
+                label: "Time available",
+                value: answers.q5 || "Not specified",
+              },
+            ].map(({ label, value }) => (
+              <li key={label} style={{ display: "flex", gap: 8, fontSize: 14, lineHeight: 1.5, alignItems: "flex-start" }}>
+                <span style={{ color: "rgb(129, 79, 255)", fontWeight: 700, flexShrink: 0 }}>•</span>
+                <span style={{ color: "#000000" }}>
+                  <span style={{ fontWeight: 600, color: "#040313" }}>{label}: </span>
+                  {value}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Live & Weekly Classes */}
