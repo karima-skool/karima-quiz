@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { QuizAnswers } from "@/lib/types";
-import { getRecommendations, buildProfileSummary } from "@/lib/recommend";
+import { getRecommendations, buildProfileSummary, Course } from "@/lib/recommend";
 import { supabase } from "@/lib/supabase";
 import CourseCard from "@/components/CourseCard";
+import LiveCourseCard from "@/components/LiveCourseCard";
+import coursesData from "@/data/courses.json";
 
 interface Props {
   answers: QuizAnswers;
@@ -18,6 +20,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
 
   const { results, topCourse } = getRecommendations(answers);
   const summary = buildProfileSummary(answers);
+  const liveCourses = (coursesData as Course[]).filter(c => c.active && c.is_live);
 
   useEffect(() => {
     if (saved) return;
@@ -137,6 +140,23 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
             {summary}
           </p>
         </div>
+
+        {/* Live & Weekly Classes */}
+        {liveCourses.length > 0 && (
+          <div style={{ marginBottom: 40 }}>
+            <h2 style={{ fontSize: 18, fontWeight: 700, color: "#040313", marginBottom: 6 }}>
+              Live &amp; Weekly Classes
+            </h2>
+            <p style={{ fontSize: 14, color: "#5e5e5e", marginBottom: 20 }}>
+              Join us live — these classes are running right now.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+              {liveCourses.map(course => (
+                <LiveCourseCard key={course.id} course={course} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Section 2 — Courses */}
         <div style={{ marginBottom: 40 }}>

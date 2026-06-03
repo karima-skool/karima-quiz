@@ -12,6 +12,12 @@ export interface Course {
   signup_url: string;
   thumbnail_url: string;
   active: boolean;
+  is_live?: boolean;
+  live_day?: string;
+  live_time?: string;
+  live_frequency?: string;
+  live_next_date?: string;
+  live_series?: string;
 }
 
 export interface QuizAnswers {

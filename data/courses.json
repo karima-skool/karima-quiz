@@ -13,7 +13,11 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/8cf7d85f2ab9411dbc66830c278a172564483a6e283f4202938fce0633674d83.jpg",
-    "active": true
+    "active": true,
+    "is_live": true,
+    "live_day": "Sundays",
+    "live_time": "5:00 PM",
+    "live_frequency": "Weekly"
   },
   {
     "id": "KA-003",
@@ -28,7 +32,8 @@
     "scholar": "Ustadh Saman Hussain",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/1d5c7c16eab147458b1d9f16c9c0b0f2304635b2ea33468aa2d5a35b0ae0b98d.jpg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-004",
@@ -43,7 +48,11 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/d8b74de1ae1e43bba9fe44d0e4e7d1561b5ed6b3f96f47b18f925e5b250a3e3d.jpg",
-    "active": true
+    "active": true,
+    "is_live": true,
+    "live_day": "Fridays",
+    "live_time": "8:00 PM",
+    "live_frequency": "Weekly"
   },
   {
     "id": "KA-005",
@@ -58,7 +67,11 @@
     "scholar": "Ustadh Asim Ayub",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/2a4516f4f4d04556b3fffbff25f38eb44b69044028194fc18f7e66754a088fd5.jpg",
-    "active": true
+    "active": true,
+    "is_live": true,
+    "live_day": "Thursdays",
+    "live_time": "7:00 PM",
+    "live_frequency": "Weekly"
   },
   {
     "id": "KA-006",
@@ -74,7 +87,12 @@
     "scholar": "Ustadh Asim Ayub",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/3edf4dd07c7e4d86ae8a39cde53296ce65a0c0db3e3c41b8a47dc47f81a40e15.jpg",
-    "active": true
+    "active": true,
+    "is_live": true,
+    "live_day": "Saturdays",
+    "live_time": "TBC",
+    "live_frequency": "Bi-weekly",
+    "live_next_date": "14th June"
   },
   {
     "id": "KA-007",
@@ -89,7 +107,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/378dd2046f304496bb1e7e575ed3c5c5d07de4d4e83944859d8412a6cedaa2a0.jpg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-008",
@@ -105,7 +124,8 @@
     "scholar": "Ustadh Saman Hussain",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/9255504a9e854265901653b45486cc57a92b31511ea84486b066800f894bf1a1.jpg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-009",
@@ -120,7 +140,8 @@
     "scholar": "Ustadh Saman Hussain",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/570bcee3c39f4d5aa3f1e50f28ad863973eadcaca5dc491e8d8dedca9e84b779.jpg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-010",
@@ -135,7 +156,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/e8d21531b7ea494d8581b94193af984a9fa04776e2a34a51b3af998684b0bb81.jpg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-013",
@@ -150,7 +172,8 @@
     "scholar": "Dr Yakoob Ahmed",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/8968d1acc7cd4670a3bc745d42b618b127592c2f3f354007879c0f65d0d84364.jpg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-014",
@@ -166,7 +189,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/aefb09ceb40848468ea312b051ac649b9dc5a76c20044786a8759f6e40084c7b",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-015",
@@ -181,7 +205,12 @@
     "scholar": "Ustadh Saman Hussain",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/aa9f35ff4f324d08a0b2e7f4052dd99068ae9cdba5e0465db3b0051a64076244.jpg",
-    "active": true
+    "active": true,
+    "is_live": true,
+    "live_day": "Wednesdays",
+    "live_time": "8:00 PM",
+    "live_frequency": "Weekly",
+    "live_series": "Currently: Rulings of Marriage"
   },
   {
     "id": "KA-016",
@@ -196,7 +225,8 @@
     "scholar": "Dr Ridhwan",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/876c6534ea074f89bbb225776b944ce7c135d1c603284926a2b253b09b26d7f6",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-017",
@@ -212,7 +242,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/bfa2e0be342a4a67bac7a1433f8fc0ec05421b7466df48d6993690bbc5d763d5",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-019",
@@ -228,7 +259,8 @@
     "scholar": "Dr Sohaib Saeed",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Tafsir%20of%20Surah%20Yaseen%20.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-020",
@@ -243,7 +275,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/b78d8d6244794b79a6ef932787a33dd6298ba3da6f154f169e2855528887954e",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-021",
@@ -258,7 +291,8 @@
     "scholar": "Ustadh Shams Tameez",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Essential%20Muslim%20Beliefs%20.png",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-022",
@@ -274,7 +308,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/010933c6e02449ca9f1681dc641df4ced9d34bac9e6748c7871a41842117ad2d",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-023",
@@ -289,7 +324,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/f1f80d305b6d472dbe01e30516c24470f7bbb7e41c11486eb26e0db5973b52df",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-024",
@@ -304,7 +340,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/5da9743f147d49e986cbe8dc9be3f2d28c2c0656a625405980a22341dc4d1d05",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-025",
@@ -319,7 +356,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/ba28056b325f4d289f8f3f16bdb60ab74e9fe32906b74f6b9fbcf391ee18322d",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-026",
@@ -334,7 +372,8 @@
     "scholar": "Dr Sohail Hanif",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/c960ebbe1a9f48eabdb33c8c7423fe7559d962938c8b4b5e9dda723b8268d536",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-027",
@@ -350,7 +389,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/dd8e458ea42845f7a252eb8ddc979337b21ffaa82a1a43c2ac0b0f6f2f9fb433",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-028",
@@ -365,7 +405,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/8041d1da185744888c14de589f23a953e94ba970488c435c83755b070025e2ec",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-030",
@@ -381,7 +422,8 @@
     "scholar": "Imam Tom Facchine",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Hollywood%20%26%20Islam%20.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-031",
@@ -397,7 +439,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Prophetic%20Supplications%20.jpeg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-032",
@@ -412,7 +455,8 @@
     "scholar": "Imam Muhasibi",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Mankind's%20Journey%20to%20The%20Hereafter%20.jpeg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-033",
@@ -427,7 +471,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://assets.skool.com/f/936327fe8f9041e3845adc5932105150/01dcbb8a4a85482c89031a71704c76d39f3507e1ab9e4cb9a3e91224949c8e23",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-034",
@@ -442,7 +487,8 @@
     "scholar": "Mufti Abdur Rehman Mangera",
     "signup_url": "https://www.skool.com/karima/classroom/6b920af5",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Happy%20Muslim%20Marriage%20.jpeg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-035",
@@ -457,7 +503,8 @@
     "scholar": "Shaykh Hisham Abu Yusuf",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/The%20Story%20of%20Musa%20%26%20Firaun%20.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-036",
@@ -472,7 +519,8 @@
     "scholar": "Dr Shoaib Malik",
     "signup_url": "https://www.skool.com/karima/classroom/2c32f065",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Proofs%20of%20God's%20Existence.jpeg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-037",
@@ -487,7 +535,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/classroom/79b1964c",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Fiqh%20History%20Explained.jpeg",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-039",
@@ -502,7 +551,8 @@
     "scholar": "Shaykh Salman Younas & Dr Abdul Rahman Azzam",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Life%20and%20Times%20of%20Salahuddin%20Ayubi.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-040",
@@ -518,7 +568,8 @@
     "scholar": "Maulana Asim Ayub",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Tafsir%20of%20Surah%20Ahzab.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-041",
@@ -534,7 +585,8 @@
     "scholar": "Shaykh Yousef Wahb & Shaykh Dr Sohaib Saeed",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Science%20or%20Signs%3F.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-042",
@@ -549,7 +601,8 @@
     "scholar": "Shaykh Salah Abul Hajj",
     "signup_url": "https://www.skool.com/karima/about",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/What%20Does%20It%20Mean%20to%20Be%20Hanafi%3F%20%20.jpeg",
-    "active": false
+    "active": false,
+    "is_live": false
   },
   {
     "id": "KA-COL-001",
@@ -564,7 +617,8 @@
     "scholar": "Various Scholars",
     "signup_url": "https://www.skool.com/karima/classroom/b7be3414",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Tafseer%20Specials.png",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-COL-002",
@@ -579,7 +633,8 @@
     "scholar": "Various Scholars",
     "signup_url": "https://www.skool.com/karima/classroom/49862141",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Seerah%20%26%20History%20Specials.png",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-COL-003",
@@ -595,7 +650,8 @@
     "scholar": "Various Scholars",
     "signup_url": "https://www.skool.com/karima/classroom/9a156fec",
     "thumbnail_url": "https://qzwhgtqcbfwprlpktdfo.supabase.co/storage/v1/object/public/course-thumbnails/Islam%20and%20Modern%20Life.png",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-COL-004",
@@ -610,7 +666,8 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/classroom/2ae90568",
     "thumbnail_url": "",
-    "active": true
+    "active": true,
+    "is_live": false
   },
   {
     "id": "KA-COL-005",
@@ -626,6 +683,7 @@
     "scholar": "Shaykh Sulayman Van Ael",
     "signup_url": "https://www.skool.com/karima/classroom/4fe16b5a",
     "thumbnail_url": "",
-    "active": true
+    "active": true,
+    "is_live": false
   }
 ]

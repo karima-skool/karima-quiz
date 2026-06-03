@@ -1,6 +1,7 @@
 "use client";
 
 import courses from "@/data/courses.json";
+import { LiveBadge } from "@/components/LiveCourseCard";
 
 interface Props {
   onBack: () => void;
@@ -107,13 +108,14 @@ export default function BrowseScreen({ onBack }: Props) {
               >
                 {/* Thumbnail */}
                 {course.thumbnail_url && (
-                  <div style={{ aspectRatio: "16/9", width: "100%", overflow: "hidden", flexShrink: 0 }}>
+                  <div style={{ position: "relative", aspectRatio: "16/9", width: "100%", overflow: "hidden", flexShrink: 0 }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={course.thumbnail_url}
                       alt={course.title}
                       style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                     />
+                    {course.is_live && <LiveBadge />}
                   </div>
                 )}
 
