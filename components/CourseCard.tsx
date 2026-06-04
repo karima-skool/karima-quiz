@@ -5,6 +5,7 @@ import { ScoredCourse } from "@/lib/recommend";
 interface Props {
   scored: ScoredCourse;
   rank: number;
+  aiReason?: string;
 }
 
 const FORMAT_LABELS: Record<string, string> = {
@@ -13,7 +14,7 @@ const FORMAT_LABELS: Record<string, string> = {
   "in-person": "In person",
 };
 
-export default function CourseCard({ scored }: Props) {
+export default function CourseCard({ scored, aiReason }: Props) {
   const { course, matchReasons } = scored;
   const url = course.signup_url || "https://www.skool.com/karima/about";
   const formatLabel = course.is_live ? "Live online" : (FORMAT_LABELS[course.format] ?? course.format);
@@ -70,17 +71,17 @@ export default function CourseCard({ scored }: Props) {
           {course.short_description}
         </p>
 
-        {/* Why this course */}
-        {matchReasons.length > 0 && (
+        {/* Why this course — AI reason takes priority, falls back to rule-based */}
+        {(aiReason || matchReasons.length > 0) && (
           <p style={{
             fontSize: 13,
-            color: "rgb(129, 79, 255)",
+            color: aiReason ? "#5e5e5e" : "rgb(129, 79, 255)",
             fontStyle: "italic",
             marginBottom: 16,
             paddingTop: 12,
             borderTop: "1px solid #ede8ff",
           }}>
-            {matchReasons[0]}
+            {aiReason || matchReasons[0]}
           </p>
         )}
 

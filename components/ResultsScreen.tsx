@@ -17,6 +17,7 @@ interface Props {
 
 export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse }: Props) {
   const [saved, setSaved] = useState(false);
+  const [aiReasons, setAiReasons] = useState<Record<string, string>>({});
 
   const { results, topCourse } = getRecommendations(answers);
   const liveCourses = (coursesData as Course[]).filter(c => c.active === true && c.is_live === true);
@@ -63,6 +64,29 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
     }
 
     saveResponse();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    async function fetchAiReasons() {
+      try {
+        const candidates = results.map((r) => ({
+          id: r.course.id,
+          title: r.course.title,
+          short_description: r.course.short_description,
+          topic_tags: r.course.topic_tags,
+        }));
+        const res = await fetch("/api/recommend", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ answers, candidates }),
+        });
+        const data = await res.json();
+        if (data.reasons) setAiReasons(data.reasons);
+      } catch (err) {
+        console.error("[results] AI reasons fetch failed, using fallback:", err);
+      }
+    }
+    fetchAiReasons();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
@@ -197,7 +221,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {recommendedResults.map((scored, i) => (
-              <CourseCard key={scored.course.id} scored={scored} rank={i + 1} />
+              <CourseCard key={scored.course.id} scored={scored} rank={i + 1} aiReason={aiReasons[scored.course.id]} />
             ))}
           </div>
         </div>
