@@ -1,10 +1,19 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { NextRequest, NextResponse } from "next/server";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-
 export async function POST(req: NextRequest) {
   try {
+    const apiKey = process.env.ANTHROPIC_API_KEY;
+    console.log("[recommend-api] ANTHROPIC_API_KEY present:", !!apiKey);
+    console.log("[recommend-api] key prefix:", apiKey ? apiKey.slice(0, 12) : "MISSING");
+
+    if (!apiKey) {
+      console.error("[recommend-api] No API key found in environment");
+      return NextResponse.json({ reasons: {} });
+    }
+
+    const client = new Anthropic({ apiKey });
+
     const { answers, candidates } = await req.json();
 
     if (!candidates || candidates.length === 0) {
@@ -38,14 +47,21 @@ For each course, write a single sentence (max 20 words) explaining specifically 
 Respond ONLY with a valid JSON object where each key is the course ID and the value is the reason string. No preamble, no markdown, no explanation. Example format:
 {"KA-001": "reason here", "KA-002": "reason here"}`;
 
+    console.log("[recommend-api] calling Anthropic with", candidates.length, "candidates");
+
     const message = await client.messages.create({
       model: "claude-haiku-4-5-20251001",
       max_tokens: 300,
       messages: [{ role: "user", content: prompt }],
     });
 
+    console.log("[recommend-api] response received, stop_reason:", message.stop_reason);
+
     const text = message.content[0].type === "text" ? message.content[0].text : "{}";
+    console.log("[recommend-api] raw response:", text);
+
     const reasons = JSON.parse(text);
+    console.log("[recommend-api] parsed reasons:", JSON.stringify(reasons));
 
     return NextResponse.json({ reasons });
   } catch (err) {
