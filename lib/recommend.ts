@@ -101,18 +101,32 @@ export function getRecommendations(answers: QuizAnswers): {
   // Sort descending
   scored.sort((a, b) => b.score - a.score);
 
-  // Top course is always the highest scorer
+  // Top course is always the highest scorer overall (including live)
   const topCourse = scored[0].course;
 
-  // Return top 3 with score > 0; fallback if none match
-  let results = scored.filter((s) => s.score > 0).slice(0, 3);
+  // Separate live and non-live
+  const nonLiveScored = scored.filter((s) => s.course.is_live !== true);
+  const liveScored = scored.filter((s) => s.course.is_live === true);
 
+  // Build results: up to 3 non-live with score > 0, then pad with top non-live if needed
+  let results = nonLiveScored.filter((s) => s.score > 0).slice(0, 3);
+
+  if (results.length < 3) {
+    // Pad with highest-scoring non-live courses that aren't already included
+    const included = new Set(results.map((r) => r.course.id));
+    const padding = nonLiveScored
+      .filter((s) => !included.has(s.course.id))
+      .slice(0, 3 - results.length);
+    results = [...results, ...padding];
+  }
+
+  // Ultimate fallback — should never happen but just in case
   if (results.length === 0) {
-    // Best tag overlap regardless; ultimate fallback is KA-001
     const fallback =
-      scored[0].score >= 0
-        ? scored[0]
-        : scored.find((s) => s.course.id === "KA-001") ?? scored[0];
+      nonLiveScored[0] ??
+      liveScored[0] ??
+      scored.find((s) => s.course.id === "KA-001") ??
+      scored[0];
     results = [fallback];
   }
 
