@@ -69,7 +69,7 @@ export default function ResultsScreen({ answers, sessionId, onRestart, onBrowse 
   useEffect(() => {
     async function fetchAiReasons() {
       try {
-        const candidates = results.map((r) => ({
+        const candidates = recommendedResults.map((r) => ({
           id: r.course.id,
           title: r.course.title,
           short_description: r.course.short_description,
